@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RistrutturaMente | Soluzioni su Misura</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="script/script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navigazione -->
+  <nav class="navbar">
+    <div class="logo">Ristruttura<span>Mente</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#progetti">I Nostri Lavori</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sezione Principale (Hero) -->
+  <header id="home" class="hero-section">
+    <div class="hero-content">
+      <h1>Trasformiamo la tua casa nel posto dei tuoi sogni</h1>
+      <p>Ristrutturazioni chiavi in mano, tempi garantiti e finiture di pregio.</p>
+      <a href="#contatti" class="btn-main">Richiedi un Preventivo Gratuito</a>
+    </div>
+  </header>
+
+  <!-- Sezione Servizi -->
+  <section id="servizi" class="services-section">
+    <h2>I Nostri Servizi</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Ristrutturazioni Complete</h3>
+        <p>Appartamenti, ville e locali commerciali dalla progettazione alla consegna.</p>
+      </div>
+      <div class="service-card">
+        <h3>Rifacimento Bagno & Cucina</h3>
+        <p>Interventi mirati con sostituzione impianti idraulici e rivestimenti moderni.</p>
+      </div>
+      <div class="service-card">
+        <h3>Cartongesso & Pittura</h3>
+        <p>Controsoffitti, isolamento termico/acustico e tinteggiature professionali.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sezione Interattiva Prima/Dopo -->
+  <section id="progetti" class="projects-section">
+    <h2>I Nostri Progetti</h2>
+    <p>Trascina il cursore per vedere la trasformazione</p>
+
+    <div class="comparison-container">
+      <div class="img background-img">
+        <!-- Sostituisci con la foto del DOPO -->
+        <img src="images/bagno_ristrutturato.png" alt="Dopo la ristrutturazione">
+      </div>
+      <div class="img foreground-img">
+        <!-- Sostituisci con la foto del PRIMA -->
+        <img src="images/bagno_non_ristrutturato.png" alt="Prima della ristrutturazione">
+      </div>
+      <input type="range" min="1" max="100" value="50" class="slider" id="compare-slider">
+    </div>
+  </section>
+
+  <!-- Sezione Contatti & Modulo -->
+  <section id="contatti" class="contact-section">
+    <h2>Contattaci</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Hai un progetto in mente?</h3>
+        <p>Scrivici per un sopralluogo gratuito. Rispondiamo entro 24 ore.</p>
+        <p><strong>Telefono:</strong> +39 5497 27948</p>
+        <p><strong>Email:</strong> info@ristrutturamente.it</p>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <input type="text" id="nome" placeholder="Il tuo Nome" required>
+        <input type="email" id="email" placeholder="La tua Email" required>
+        <textarea id="messaggio" placeholder="Descrivi brevemente il tuo progetto" rows="5" required></textarea>
+        <button type="submit" class="btn-submit">Invia Richiesta</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 RistrutturaMente. Tutti i diritti riservati.</p>
+  </footer>
+</body>
+
+</html>
