@@ -27,3 +27,27 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
+// 3. Gestione Apertura/Chiusura Menu Mobile
+const menuToggle = document.getElementById('mobile-menu');
+const navList = document.getElementById('nav-list');
+const navLinks = document.querySelectorAll('.nav-links a');
+
+// Apri e chiudi il menu quando clicchi sull'hamburger
+if (menuToggle && navList) {
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navList.classList.toggle('active');
+  });
+}
+
+// Chiudi il menu automaticamente quando l'utente clicca su un link del menu
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (navList.classList.contains('active')) {
+      menuToggle.classList.remove('active');
+      navList.classList.remove('remove'); // Rimuove la tendina
+      navList.classList.remove('active');
+    }
+  });
+});
